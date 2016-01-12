@@ -1,0 +1,9 @@
+
+CREATE TABLE `jqs_data` (
+  `stamp` timestamp NOT NULL default CURRENT_TIMESTAMP on update
+CURRENT_TIMESTAMP,
+  `sheet_name` varchar(128) NOT NULL default '',
+  `sheet_value` longtext,
+  PRIMARY KEY  (`sheet_name`),
+  UNIQUE KEY `sheet_name` (`sheet_name`)
+) 
